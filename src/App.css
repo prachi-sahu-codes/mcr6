@@ -1,3 +1,168 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
+  padding: 0 4rem;
+}
+
+h1,
+h2 {
+  margin: 1rem 0;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #fd6262;
+  color: #fff;
+  margin: 1rem;
+  border-radius: 5px;
+  border: none;
+}
+
+li {
+  list-style: none;
+}
+
+.dish-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.list-title {
+  text-align: left;
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.dish-card {
+  box-shadow: 0 2px 6px rgb(166, 166, 166);
+  border-radius: 5px;
+  text-align: left;
+}
+
+.dish-card-img {
+  border-radius: 5px 5px 0 0;
+}
+
+.card-detail {
+  padding: 0.5rem 1rem;
+}
+
+.card-price {
+  margin: 0.4rem 0 0.1rem;
+}
+
+.card-sub-detail {
+  font-size: 0.9rem;
+  color: gray;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.restaurant-detail {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+  text-align: left;
+}
+
+.restaurant-title {
+  font-size: 2.2rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+.horizontal-rule {
+  margin: 1rem 0 2rem;
+}
+
+.review-card {
+  margin: 1rem 0;
+}
+
+.review-comment {
+  padding: 1rem 0;
+}
+
+.review-img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+
+.review-person {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  background-color: rgb(72, 122, 22);
+  padding: 1px 9px;
+  border-radius: 5px;
+  color: yellow;
+  font-weight: 700;
+}
+
+.rating-num {
+  padding-bottom: 0.2rem;
+}
+
+.back-arrow {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 1.5rem;
+}
+
+.modal {
+  position: absolute;
+  height: max-content;
+  width: 350px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fd6262;
+  color: #fff;
+  border-radius: 5px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.submit-btn {
+  background-color: #fff;
+  color: #1a1a1a;
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+}
+
+.input-title {
+  font-size: 1.2rem;
+  padding: 1rem 0;
+}
+
+.input-select,
+.input-comment {
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.modal-line {
+  margin: 1rem 2rem;
+  color: #fff;
 }
