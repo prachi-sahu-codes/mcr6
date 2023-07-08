@@ -6,15 +6,15 @@ export const Card = ({ dish, restaurant }) => {
   return (
     <div
       className="dish-card"
-      onClick={() => navigate(`/restaurant/${restaurant.id}`)}
+      onClick={() => navigate(`/restaurant/${restaurant?.id}`)}
     >
-      <img src={dish.imgSrc} alt="dish pic" className="dish-card-img" />
+      <img src={dish?.imgSrc} alt="dish pic" className="dish-card-img" />
       <div className="card-detail">
-        <h4>{dish.name}</h4>
+        <h4>{dish?.name}</h4>
         <p className="card-price card-sub-detail">
-          Rs.{dish.price} for {dish.qty}
+          Rs.{dish?.price} for {dish?.qty}
         </p>
-        <p className="card-sub-detail">{restaurant.name}</p>
+        <p className="card-sub-detail">{restaurant?.name}</p>
       </div>
     </div>
   );
