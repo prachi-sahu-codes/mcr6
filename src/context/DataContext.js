@@ -23,7 +23,7 @@ export const DataProvider = ({ children }) => {
               res.ratings.reduce((acc, rat) => rat.rating + acc, 0) +
               Number(action?.payload?.data?.rating);
             const finalAverage = average / (res.ratings.length + 1);
-            console.log(average, finalAverage);
+
             return {
               ...res,
               averageRating: finalAverage,
