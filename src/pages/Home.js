@@ -12,23 +12,23 @@ export const Home = () => {
 
       {state.cuisine.map((type) => (
         <button
-          key={type.id}
-          value={type.id}
+          key={type?.id}
+          value={type?.id}
           onClick={(e) =>
-            dispatch({ type: "CUISINE_SELECT", payload: type.id })
+            dispatch({ type: "CUISINE_SELECT", payload: type?.id })
           }
         >
-          {type.name}
+          {type?.name}
         </button>
       ))}
 
       {state.restaurantsList.length > 0 && (
         <ul>
           {state.restaurantsList.map((res) => (
-            <li key={res.id}>
-              <h2 className="list-title">Dishes by {res.name}</h2>
+            <li key={res?.id}>
+              <h2 className="list-title">Dishes by {res?.name}</h2>
               <ul className="dish-list">
-                {res.menu.map((dish, index) => (
+                {res?.menu.map((dish, index) => (
                   <li key={index}>
                     <Card dish={dish} restaurant={res} />
                   </li>

@@ -8,13 +8,7 @@ export const Card = ({ dish, restaurant }) => {
       className="dish-card"
       onClick={() => navigate(`/restaurant/${restaurant.id}`)}
     >
-      <img
-        src={dish.imgSrc}
-        width="260px"
-        height="260px"
-        alt="dish pic"
-        className="dish-card-img"
-      />
+      <img src={dish.imgSrc} alt="dish pic" className="dish-card-img" />
       <div className="card-detail">
         <h4>{dish.name}</h4>
         <p className="card-price card-sub-detail">

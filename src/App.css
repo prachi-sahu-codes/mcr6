@@ -51,6 +51,9 @@ li {
 
 .dish-card-img {
   border-radius: 5px 5px 0 0;
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
 }
 
 .card-detail {
@@ -165,5 +168,5 @@ li {
 
 .modal-line {
   margin: 1rem 2rem;
-  color: #fff;
+  background-color: #fff;
 }
