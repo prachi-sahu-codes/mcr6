@@ -21,9 +21,9 @@ export const RestaurantDetail = () => {
               <span key={index}>{name}, </span>
             ))}
           </p>
-          <p className="card-sub-detail">{findRestaurant.address}</p>
+          <p className="card-sub-detail">{findRestaurant?.address}</p>
           <p className="card-sub-detail">
-            Average Rating: {findRestaurant.averageRating}
+            Average Rating: {findRestaurant?.averageRating}
           </p>
         </div>
         <div>
@@ -39,7 +39,7 @@ export const RestaurantDetail = () => {
 
       <h2>Reviews</h2>
       <ul>
-        {findRestaurant.ratings.map((review, index) => (
+        {findRestaurant?.ratings.map((review, index) => (
           <li key={index}>
             <ReviewCard review={review} />
           </li>

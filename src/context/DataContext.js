@@ -32,8 +32,8 @@ export const DataProvider = ({ children }) => {
                 {
                   rating: Number(action?.payload?.data?.rating),
                   comment: action?.payload?.data?.comment,
-                  revName: "Rahul",
-                  pp: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5tbKdv1HDbAjPc526SK0yDZuoOmaaOyGNoj_e1q3ngruK2bTqzub3&s=0",
+                  revName: "Ritik",
+                  pp: "https://i.imgur.com/dGLRy0M.png",
                 },
               ],
             };
